@@ -1,0 +1,37 @@
+.person-container {
+    display: flex;               /* Gør containeren til en flex-container */
+    align-items: center;         /* Centrerer billede og tekst lodret */
+    gap: 20px;                   /* tilføjer afstand mellem tekst og billedet */
+}
+
+.person-container .text {
+    flex: 1;                     /* Giver teksten lidt mere plads */
+}
+
+.person-container .image img {
+    max-width: 100px;            /* Justerer billedets bredde */
+    height: auto;                /* Bevarer billedets proportioner */
+}
+
+.section:target {
+    background-color: #e8f5e9; /* Lys grøn baggrund */
+    border-left: 5px solid #004F2D; /* Grøn kant for visuel fokus */
+    padding-left: 15px;
+}
+
+/* Gør links mere interaktive */
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav a:hover {
+    color: #e8f5e9; /* Lysere grøn farve ved hover */
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
